@@ -12,6 +12,6 @@ ENV LD_LIBRARY_PATH /usr/local/lib
 
 RUN apt-get -y install golang cmake
 
-RUN cd /opt && git clone https://github.com/VISIONAI/VMXwebcam.git && cd VMXwebcam && linux_builder.sh
+RUN cd /opt && git clone https://github.com/VISIONAI/VMXwebcam.git && cd VMXwebcam && ./linux_builder.sh
 
 CMD ["node"]
